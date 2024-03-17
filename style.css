@@ -2,3 +2,15 @@
     background-color: grey;
     border-radius: 8px;
 }
+
+.link-box a {
+    color: white;
+}
+
+.link-box#github {
+    background-color: #1C2128
+}
+
+.link-box#itch {
+    background-color: #F13152
+}
