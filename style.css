@@ -41,6 +41,11 @@ body * {
     border-color: rgb(145, 191, 255);
 }
 
+.link-box video, img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
 a {
     text-decoration: none;
     width: 100%;
@@ -52,4 +57,20 @@ a {
 
 .link-box#itch {
     background-color: #F13152;
+}
+
+.link-box#gemini {
+    background-color: #F58142;
+}
+
+.link-box#display3d {
+    background-color: #5B7C89;
+}
+
+.link-box#display3d video {
+    aspect-ratio: 16/9;
+}
+
+.link-box#orbit-game {
+    background-color: #231b18;
 }
