@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+
+    font-family: "Noto Sans Malayalam", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    color: white;
+}
+
+html {
+    background: #1a1d2c;
+}
+
+body {
+    margin: 0;
+    margin-top: 25px;
+    padding-bottom: 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+
+    * {
+        max-width: 500px;
+    }
+}
+
+a {
+    text-decoration: none;
+    width: 100%;
+}
+
+.link-box {
+    background-color: #151426;
+    border: 2px solid rgb(139, 136, 219);
+    border-radius: 8px;
+    padding: 0px 16px;
+    width: 100%;
+
+    &:hover {
+        border-color: rgb(145, 191, 255);
+    }
+
+    video,
+    img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #github {
+        background-color: #1C2128;
+    }
+
+    #itch {
+        background-color: #F13152;
+    }
+
+    #gemini {
+        background-color: #F58142;
+    }
+
+    #display3d {
+        background-color: #5B7C89;
+
+        video {
+            aspect-ratio: 16/9;
+        }
+    }
+
+    #orbit-game {
+        background-color: #231b18;
+    }
+}

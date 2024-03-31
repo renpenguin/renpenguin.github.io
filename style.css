@@ -1,76 +1,68 @@
 * {
-    box-sizing: border-box;
-
-    font-family: "Noto Sans Malayalam", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
-    color: white;
+  box-sizing: border-box;
+  font-family: "Noto Sans Malayalam", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: white;
 }
 
 html {
-    background: #1a1d2c;
+  background: #1a1d2c;
 }
 
 body {
-    margin: 0;
-    margin-top: 25px;
-    padding-bottom: 2rem;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 6px;
+  margin: 0;
+  margin-top: 25px;
+  padding-bottom: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
 }
-
 body * {
-    max-width: 500px;
-}
-
-.link-box {
-    background-color: #151426;
-    border: 2px solid rgb(139, 136, 219);
-    border-radius: 8px;
-    padding: 0px 16px;
-    width: 100%;
-}
-
-.link-box:hover {
-    border-color: rgb(145, 191, 255);
-}
-
-.link-box video, img {
-    width: 100%;
-    margin-bottom: 10px;
+  max-width: 500px;
 }
 
 a {
-    text-decoration: none;
-    width: 100%;
+  text-decoration: none;
+  width: 100%;
 }
 
-.link-box#github {
-    background-color: #1C2128;
+.link-box {
+  background-color: #151426;
+  border: 2px solid rgb(139, 136, 219);
+  border-radius: 8px;
+  padding: 0px 16px;
+  width: 100%;
+}
+.link-box:hover {
+  border-color: rgb(145, 191, 255);
+}
+.link-box video,
+.link-box img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.link-box #github {
+  background-color: #1C2128;
+}
+.link-box #itch {
+  background-color: #F13152;
+}
+.link-box #gemini {
+  background-color: #F58142;
+}
+.link-box #display3d {
+  background-color: #5B7C89;
+}
+.link-box #display3d video {
+  aspect-ratio: 16/9;
+}
+.link-box #orbit-game {
+  background-color: #231b18;
 }
 
-.link-box#itch {
-    background-color: #F13152;
-}
-
-.link-box#gemini {
-    background-color: #F58142;
-}
-
-.link-box#display3d {
-    background-color: #5B7C89;
-}
-
-.link-box#display3d video {
-    aspect-ratio: 16/9;
-}
-
-.link-box#orbit-game {
-    background-color: #231b18;
-}
+/*# sourceMappingURL=style.css.map */
