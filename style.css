@@ -46,22 +46,22 @@ a {
   width: 100%;
   margin-bottom: 10px;
 }
-.link-box #github {
+.link-box#github {
   background-color: #1C2128;
 }
-.link-box #itch {
+.link-box#itch {
   background-color: #F13152;
 }
-.link-box #gemini {
+.link-box#gemini {
   background-color: #F58142;
 }
-.link-box #display3d {
+.link-box#display3d {
   background-color: #5B7C89;
 }
-.link-box #display3d video {
+.link-box#display3d video {
   aspect-ratio: 16/9;
 }
-.link-box #orbit-game {
+.link-box#orbit-game {
   background-color: #231b18;
 }
 

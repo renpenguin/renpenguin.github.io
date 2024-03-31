@@ -7,6 +7,7 @@
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
+
     color: white;
 }
 
@@ -51,19 +52,19 @@ a {
         margin-bottom: 10px;
     }
 
-    #github {
+    &#github {
         background-color: #1C2128;
     }
 
-    #itch {
+    &#itch {
         background-color: #F13152;
     }
 
-    #gemini {
+    &#gemini {
         background-color: #F58142;
     }
 
-    #display3d {
+    &#display3d {
         background-color: #5B7C89;
 
         video {
@@ -71,7 +72,7 @@ a {
         }
     }
 
-    #orbit-game {
+    &#orbit-game {
         background-color: #231b18;
     }
 }
