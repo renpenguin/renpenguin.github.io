@@ -6,20 +6,21 @@
     font-weight: 600;
     font-style: normal;
     font-variation-settings:
-       "wdth" 100;
+        "wdth" 100;
     color: white;
 }
 
 html {
     background: #1a1d2c;
 }
+
 body {
-    margin: 0; 
+    margin: 0;
     margin-top: 25px;
-    padding-bottom: 2rem; 
-    min-height: 100vh; 
-    display: flex; 
-    flex-direction: column; 
+    padding-bottom: 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 6px;
 }
@@ -30,14 +31,14 @@ body * {
 
 .link-box {
     background-color: #151426;
-    border: 2px solid rgb(139,136,219);
+    border: 2px solid rgb(139, 136, 219);
     border-radius: 8px;
     padding: 0px 16px;
     width: 100%;
 }
 
 .link-box:hover {
-    border-color: rgb(145,191,255);
+    border-color: rgb(145, 191, 255);
 }
 
 a {
