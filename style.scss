@@ -27,9 +27,13 @@ body {
 
 a {
     text-decoration: none;
+    color: rgb(255, 255, 255);
     width: 100%;
 }
 
+.underline {
+    text-decoration: underline;
+}
 
 .link-box-row {
     display: flex;
@@ -59,7 +63,6 @@ a {
     video,
     img {
         width: 100%;
-        margin-bottom: 10px;
     }
 
     &#github {
@@ -85,4 +88,17 @@ a {
     &#orbit-game {
         background-color: #231b18;
     }
+}
+
+.link-row {
+    padding: 12px 3px;
+    font-size: 1.2em;
+
+    a {
+        margin-right: 20px;
+    }
+}
+
+.below-text {
+    padding-top: 0;
 }

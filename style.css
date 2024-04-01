@@ -23,7 +23,12 @@ body * {
 
 a {
   text-decoration: none;
+  color: rgb(255, 255, 255);
   width: 100%;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 .link-box-row {
@@ -51,7 +56,6 @@ a {
 .link-box video,
 .link-box img {
   width: 100%;
-  margin-bottom: 10px;
 }
 .link-box#github {
   background-color: #1C2128;
@@ -70,6 +74,18 @@ a {
 }
 .link-box#orbit-game {
   background-color: #231b18;
+}
+
+.link-row {
+  padding: 12px 3px;
+  font-size: 1.2em;
+}
+.link-row a {
+  margin-right: 20px;
+}
+
+.below-text {
+  padding-top: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
