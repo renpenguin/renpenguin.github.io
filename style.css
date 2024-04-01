@@ -17,9 +17,6 @@ body {
   align-items: center;
   gap: 6px;
 }
-body * {
-  max-width: 550px;
-}
 
 a {
   text-decoration: none;
@@ -32,6 +29,7 @@ a {
 }
 
 .link-box-row {
+  max-width: 550px;
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
@@ -42,6 +40,7 @@ a {
 }
 
 .link-box {
+  max-width: 550px;
   background-color: #151426;
   border: 2px solid rgb(139, 136, 219);
   border-radius: 8px;
