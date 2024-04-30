@@ -20,7 +20,8 @@ body {
     align-items: center;
     gap: 6px;
 
-    > h1, > h2 {
+    >h1,
+    >h2 {
         color: #93B5AF;
     }
 }
@@ -75,8 +76,9 @@ a {
         background-color: #F13152;
     }
 
-    &#gemini {
-        background-color: #F58142;
+    &#spaceshipment {
+        background-color: #231b18;
+        image-rendering: pixelated;
     }
 
     &#display3d {
@@ -87,8 +89,8 @@ a {
         }
     }
 
-    &#spaceshipment {
-        background-color: #231b18;
+    &#gemini {
+        background-color: #F58142;
     }
 }
 

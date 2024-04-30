@@ -17,7 +17,8 @@ body {
   align-items: center;
   gap: 6px;
 }
-body > h1, body > h2 {
+body > h1,
+body > h2 {
   color: #93B5AF;
 }
 
@@ -65,8 +66,9 @@ a {
 .link-box#itch {
   background-color: #F13152;
 }
-.link-box#gemini {
-  background-color: #F58142;
+.link-box#spaceshipment {
+  background-color: #231b18;
+  image-rendering: pixelated;
 }
 .link-box#display3d {
   background-color: #5B7C89;
@@ -74,8 +76,8 @@ a {
 .link-box#display3d video {
   aspect-ratio: 16/9;
 }
-.link-box#spaceshipment {
-  background-color: #231b18;
+.link-box#gemini {
+  background-color: #F58142;
 }
 
 .link-row {
