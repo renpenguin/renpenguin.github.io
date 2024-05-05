@@ -70,6 +70,13 @@ a {
   background-color: #231b18;
   image-rendering: pixelated;
 }
+.link-box#safety-diver {
+  background-color: #d4d992;
+  image-rendering: pixelated;
+}
+.link-box#safety-diver * {
+  color: #151426;
+}
 .link-box#display3d {
   background-color: #5B7C89;
 }

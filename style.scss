@@ -81,6 +81,15 @@ a {
         image-rendering: pixelated;
     }
 
+    &#safety-diver {
+        background-color: #d4d992;
+        image-rendering: pixelated;
+
+        * {
+            color: #151426;
+        }
+    }
+
     &#display3d {
         background-color: #5B7C89;
 
