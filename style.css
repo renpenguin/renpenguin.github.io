@@ -21,11 +21,16 @@ body > h1,
 body > h2 {
   color: #93B5AF;
 }
+body h2 {
+  margin-bottom: 0;
+}
 
 a {
-  text-decoration: none;
   color: rgb(255, 255, 255);
   width: 100%;
+}
+a:hover {
+  color: #91bfff;
 }
 
 .underline {
@@ -39,6 +44,7 @@ a {
   gap: 6px;
 }
 .link-box-row a {
+  text-decoration: none;
   min-width: 250px;
   flex: 1;
 }
@@ -93,6 +99,7 @@ a {
 }
 .link-row a {
   margin-right: 5px;
+  text-decoration: none;
 }
 
 .below-text {
