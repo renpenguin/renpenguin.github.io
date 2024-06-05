@@ -88,6 +88,14 @@ a {
         image-rendering: pixelated;
     }
 
+    &#lasers {
+        background-color: #1E5085;
+
+        video {
+            aspect-ratio: 874/560;
+        }
+    }
+
     &#safety-diver {
         background-color: #d4d992;
         image-rendering: pixelated;

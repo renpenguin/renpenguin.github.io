@@ -76,6 +76,12 @@ a:hover {
   background-color: #231b18;
   image-rendering: pixelated;
 }
+.link-box#lasers {
+  background-color: #1E5085;
+}
+.link-box#lasers video {
+  aspect-ratio: 874/560;
+}
 .link-box#safety-diver {
   background-color: #d4d992;
   image-rendering: pixelated;
