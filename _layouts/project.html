@@ -1,15 +1,14 @@
 ---
 layout: base
-title: {{ page.pretty_title }} | ren's stuff
+title: page.pretty_title | ren's stuff
 ---
 
-<h1>{{ page.pretty_title }}</h1>
+<h1>
+	<i class="i {{ page.icon }}" aria-hidden="true"></i>
+	{{ page.pretty_title | default: page.title }} | <a href="/">Home</a>
+</h1>
 
-<div class="link-box {{ project.class }}" id="{{ page.title | slugify }}" {% if project.color %}style="background: {{ project.color }}"{% endif %}>
-	<h2>
-		<i class="i {{ icon }}" aria-hidden="true"></i>
-		{{ page.pretty_title }}
-	</h2>
+<div class="link-box selected {{ page.class }}" id="{{ page.title | slugify }}" {% if page.color %}style="background: {{ page.color }};"{% endif %}>
 
 	{{ content }}
 
@@ -22,5 +21,3 @@ title: {{ page.pretty_title }} | ren's stuff
 		{% endfor %}
 	</div>
 </div>
-
-<h2><a href="/">Back to home page</a></h2>
