@@ -21,7 +21,9 @@ body {
     gap: 6px;
 
     > h1, > h2 {
-        color: #93B5AF;
+        &, * {
+            color: #93B5AF;
+        }
     }
 
     h2 {
