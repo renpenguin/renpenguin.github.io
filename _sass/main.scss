@@ -20,8 +20,7 @@ body {
     align-items: center;
     gap: 6px;
 
-    >h1,
-    >h2 {
+    > h1, > h2 {
         color: #93B5AF;
     }
 
@@ -83,38 +82,12 @@ a {
         background-color: #F13152;
     }
 
-    &#spaceshipment {
-        background-color: #231b18;
+    &.pixelate {
         image-rendering: pixelated;
     }
 
-    &#lasers {
-        background-color: #1E5085;
-
-        video {
-            aspect-ratio: 874/560;
-        }
-    }
-
-    &#safety-diver {
-        background-color: #d4d992;
-        image-rendering: pixelated;
-
-        * {
-            color: #151426;
-        }
-    }
-
-    &#display3d {
-        background-color: #5B7C89;
-
-        video {
-            aspect-ratio: 16/9;
-        }
-    }
-
-    &#gemini {
-        background-color: #F58142;
+    &.black-text * {
+        color: #151426;
     }
 }
 

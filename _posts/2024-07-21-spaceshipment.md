@@ -1,6 +1,6 @@
 ---
-title: spaceshipment
-pretty_title: Spaceshipment
+color: "#231b18"
+class: pixelate
 icon: fa-solid fa-satellite
 links:
   - title: itch.io

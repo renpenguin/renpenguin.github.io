@@ -1,6 +1,6 @@
 ---
-title: safety-diver
-pretty_title: Safety Diver
+color: "#d4d992"
+class: black-text pixelate
 icon: fa-solid fa-life-ring
 links:
   - title: itch.io

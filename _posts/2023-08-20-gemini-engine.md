@@ -1,6 +1,5 @@
 ---
-title: gemini
-pretty_title: Gemini Engine
+color: "#f58142"
 icon: fa-brands fa-rust
 links:
   - title: crates.io

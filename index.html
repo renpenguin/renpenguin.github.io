@@ -1,6 +1,5 @@
 ---
 layout: base
-title: ren's stuff
 ---
 
 <div class="link-box" id="greeting">
@@ -33,10 +32,10 @@ title: ren's stuff
 <h1>Projects</h1>
 
 {% for project in site.posts %}
-<div class="link-box" id="{{ project.title }}">
+<div class="link-box {{ project.class }}" id="{{ project.title | slugify }}" {% if project.color %}style="background: {{ project.color }}"{% endif %}>
 	<h2>
 		<i class="i {{ project.icon }}" aria-hidden="true"></i>
-		{{ project.pretty_title }}
+		{{ project.pretty_title | default: project.title }}
 	</h2>
 	{{ project.content }}
 
