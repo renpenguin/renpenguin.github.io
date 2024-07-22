@@ -67,6 +67,20 @@ a {
 
     min-width: 250px;
 
+    &.selected, &:target {
+        max-width: 900px;
+    }
+
+    &:target {
+        animation-name: expand-link-box;
+        animation-duration: 1s;
+    }
+
+    @keyframes expand-link-box {
+        from {max-width: 550px;}
+        to {background-color: 900px;}
+    }
+
     &:hover {
         border-color: rgb(145, 191, 255);
     }
