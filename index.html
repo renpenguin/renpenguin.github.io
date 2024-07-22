@@ -1,206 +1,52 @@
-<!DOCTYPE html>
-<html>
+---
+layout: base
+title: ren's stuff
+---
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+<div class="link-box" id="greeting">
+	<h2>hi!</h2>
+	<p>i'm ren, i like making things occasionally. my two favourite languages are <span style="color: #DEA584;">Rust</span> for its memory safety and <span style="color: #888888;">C</span> for its barebones low-level feel. i run arch linux with <a href="http://hyprland.org"  target="_blank">HyprlandWM</a> on my main system, mainly as a hobby.</p>
+</div>
 
-    <!-- HTML Meta Tags -->
-    <title>ren's stuff</title>
-    <meta name="description" content="hi! i'm ren, i like making things occasionally">
-    <meta name="author" content="Red Penguin">
+<div class="link-box-row">
+	<a href="https://github.com/redpenguinyt" target="_blank" rel="noopener noreferrer">
+		<div class="link-box" id="github">
+			<h2>
+				<i class="i fa-brands fa-github" aria-hidden="true"></i>
+				Github
+			</h2>
+			<p>Most of my stuff is on Github!</p>
+		</div>
+	</a>
 
-    <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://redpenguinyt.github.io/">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="ren's stuff">
-    <meta property="og:description" content="hi! i'm ren, i like making things occasionally">
+	<a href="https://redpenguin777.itch.io" target="_blank" rel="noopener noreferrer">
+		<div class="link-box" id="itch">
+			<h2>
+				<i class="i fa-brands fa-itch-io" aria-hidden="true"></i>
+				Itch.io
+			</h2>
+			<p>...except my games, which are on itch</p>
+		</div>
+	</a>
+</div>
 
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary">
-    <meta property="twitter:domain" content="redpenguinyt.github.io">
-    <meta property="twitter:url" content="https://redpenguinyt.github.io/">
-    <meta name="twitter:title" content="ren's stuff">
-    <meta name="twitter:description" content="hi! i'm ren, i like making things occasionally">
+<h1>Projects</h1>
 
-    <!-- Site resources -->
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.gif">
+{% for project in site.posts %}
+<div class="link-box" id="{{ project.title }}">
+	<h2>
+		<i class="i {{ project.icon }}" aria-hidden="true"></i>
+		{{ project.pretty_title }}
+	</h2>
+	{{ project.content }}
 
-    <!-- Noto Sans Malayalam - Google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@600&display=swap" rel="stylesheet">
-
-    <!-- Fontawesome icons -->
-    <script src="https://kit.fontawesome.com/8869e15103.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-    <div class="link-box" id="greeting">
-        <h2>hi!</h2>
-        <p>i'm ren, i like making things occasionally. my two favourite languages are <span style="color: #DEA584;">Rust</span> for its memory safety and <span style="color: #888888;">C</span> for its barebones low-level feel. i run arch linux with <a href="http://hyprland.org"  target="_blank">HyprlandWM</a> on my main system, mainly as a hobby.</p>
-    </div>
-
-    <div class="link-box-row">
-        <a href="https://github.com/redpenguinyt" target="_blank" rel="noopener noreferrer">
-            <div class="link-box" id="github">
-                <h2>
-                    <i class="i fa-brands fa-github" aria-hidden="true"></i>
-                    Github
-                </h2>
-                <p>Most of my stuff is on Github!</p>
-            </div>
-        </a>
-
-        <a href="https://redpenguin777.itch.io" target="_blank" rel="noopener noreferrer">
-            <div class="link-box" id="itch">
-                <h2>
-                    <i class="i fa-brands fa-itch-io" aria-hidden="true"></i>
-                    Itch.io
-                </h2>
-                <p>...except my games, which are on itch</p>
-            </div>
-        </a>
-    </div>
-
-    <h1>Projects</h1>
-
-    <div class="link-box" id="spaceshipment">
-        <h2>
-            <i class="i fa-solid fa-satellite" aria-hidden="true"></i>
-            Spaceshipment
-        </h2>
-        <p>A game about delivering packages to residents of the asteroid belt, made for the Playdate handheld console
-        </p>
-
-        <img src="https://img.itch.zone/aW1hZ2UvMjU2NTIyNS8xNjM3MTI3Mi5naWY=/original/PIS466.gif"
-            alt="Spaceshipment Gameplay Example">
-
-        <div class="link-row">
-            <a href="https://redpenguin777.itch.io/spaceshipment" target="_blank" rel="noopener noreferrer">
-                <i class="i fa-brands fa-itch-io" aria-hidden="true"></i>
-                <span class="underline">itch.io</span>
-            </a>
-        </div>
-    </div>
-
-    <div class="link-box" id="lasers">
-        <h2>
-            <i class="i fa-solid fa-slash" aria-hidden="true"></i>
-            Lasers
-        </h2>
-        <p>A laser simulator made with SDL in the Odin programming language. I made this toy to further learn Odin, after starting out with <a href="http://github.com/redpenguinyt/Minesweeper" target="_blank">a Minesweeper clone</a></p>
-
-        <video controls autoplay muted loop>
-            <source src="https://github.com/redpenguinyt/Lasers/assets/79577742/555f9c07-a39f-4694-a77e-8165b0044ce0"
-                type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-
-        <div class="link-row">
-            <a href="https://github.com/redpenguinyt/Lasers" target="_blank" rel="noopener noreferrer">
-                <i class="i fa-brands fa-github" aria-hidden="true"></i>
-                <span class="underline">Github</span>
-            </a>
-        </div>
-    </div>
-
-    <div class="link-box" id="safety-diver">
-        <h2>
-            <i class="i fa-solid fa-life-ring" aria-hidden="true"></i>
-            Safety Diver
-        </h2>
-        <p>A game about collecting treasure from the depths of the sea while fighting your natural buoyancy, made in 1
-            week for the Uncrank'd game jam
-        </p>
-
-        <img src="https://img.itch.zone/aW1hZ2UvMjY4NjEwMi8xNjA5MTE2NC5naWY=/794x1000/AEUWmy.gif"
-            alt="Safety Diver Gameplay Example">
-
-        <div class="link-row">
-            <a href="https://redpenguin777.itch.io/safety-diver" target="_blank" rel="noopener noreferrer">
-                <i class="i fa-brands fa-itch-io" aria-hidden="true"></i>
-                <span class="underline">itch.io</span>
-            </a>
-            <a href="https://itch.io/jam/uncrankdjam" target="_blank" rel="noopener noreferrer">
-                <i class="i fa-brands fa-itch-io" aria-hidden="true"></i>
-                <span class="underline">Uncrank'd Jam</span>
-            </a>
-            <a href="https://github.com/redpenguinyt/SafetyDiver" target="_blank" rel="noopener noreferrer">
-                <i class="i fa-brands fa-github" aria-hidden="true"></i>
-                <span class="underline">Github</span>
-            </a>
-        </div>
-    </div>
-
-    <div class="link-box" id="display3d">
-        <h2>
-            <i class="i fa-solid fa-cube" aria-hidden="true"></i>
-            display3d
-        </h2>
-        <p>A command line interface for rendering and animating 3D objects</p>
-
-        <video controls autoplay muted loop>
-            <source src="https://github.com/redpenguinyt/display3d/assets/79577742/6131167a-7b83-4c8e-96ec-c9715f3b4d23"
-                type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-
-        <div class="link-row">
-            <a href="https://crates.io/crates/display3d" target="_blank" rel="noopener noreferrer">
-                <i class="i fa-brands fa-rust" aria-hidden="true"></i>
-                <span class="underline">crates.io</span>
-            </a>
-
-            <a href="https://github.com/redpenguinyt/display3d" target="_blank" rel="noopener noreferrer">
-                <i class="i fa-brands fa-github" aria-hidden="true"></i>
-                <span class="underline">Github</span>
-            </a>
-        </div>
-    </div>
-
-    <div class="link-box" id="dots">
-        <h2>
-            <i class="i fa-solid fa-window-maximize" aria-hidden="true"></i>
-            Arch Dotfiles
-        </h2>
-        <p>My Hyprland rice
-        </p>
-
-        <img src="https://github.com/redpenguinyt/dots/assets/79577742/bf3c08cb-91da-4448-9d6c-67b3f6752d20"
-            alt="Hyprland Screenshot">
-
-        <div class="link-row">
-            <a href="https://github.com/redpenguinyt/dots" target="_blank" rel="noopener noreferrer">
-                <i class="i fa-brands fa-github" aria-hidden="true"></i>
-                <span class="underline">Github</span>
-            </a>
-        </div>
-    </div>
-
-    <div class="link-box" id="gemini">
-        <h2>
-            <i class="i fa-brands fa-rust" aria-hidden="true"></i>
-            Gemini Engine
-        </h2>
-        <p>A 2D/3D monospaced ASCII rendering engine, written in Rust. It's capable of rendering 2D and 3D graphics
-            in a terminal</p>
-
-        <div class="link-row below-text">
-            <a href="https://crates.io/crates/gemini-engine" target="_blank" rel="noopener noreferrer">
-                <i class="i fa-brands fa-rust" aria-hidden="true"></i>
-                <span class="underline">crates.io</span>
-            </a>
-
-            <a href="https://github.com/redpenguinyt/gemini-rust" target="_blank" rel="noopener noreferrer">
-                <i class="i fa-brands fa-github" aria-hidden="true"></i>
-                <span class="underline">Github</span>
-            </a>
-        </div>
-    </div>
-
-    <h2>made by ren, 2024</h2>
-</body>
-
-</html>
+	<div class="link-row">
+		{% for link in project.links %}
+			<a href="{{ link.href }}" target="_blank" rel="noopener noreferrer">
+				<i class="i fa-brands {{ link.icon }}" aria-hidden="true"></i>
+				<span class="underline">{{ link.title }}</span>
+			</a>
+		{% endfor %}
+	</div>
+</div>
+{% endfor %}

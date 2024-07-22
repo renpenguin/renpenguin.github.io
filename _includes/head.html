@@ -1,0 +1,19 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>{{ page.title | default: site.title }}</title>
+    {%- seo -%}
+
+    <!-- Site resources -->
+    <link rel="stylesheet" type="text/css" href={{ "/assets/style.css" | relative_url }} />
+    <link rel="shortcut icon" type="image/x-icon" href={{ "/assets/favicon.gif" | relative_url }} />
+
+    <!-- Noto Sans Malayalam - Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@600&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome icons -->
+    <script src="https://kit.fontawesome.com/8869e15103.js" crossorigin="anonymous"></script>
+</head>

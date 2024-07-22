@@ -1,0 +1,23 @@
+# Jekyll config
+
+title: ren's stuff
+description: hi! i'm ren, i like making things occasionally
+author: Red Penguin
+
+url: "https://redpengu.in"
+
+# Build settings
+plugins:
+  - jekyll-feed
+
+collections:
+  posts:
+    output: true
+    permalink: /p/:title
+
+defaults:
+  - scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: project
+      icon: fa-solid fa-cube

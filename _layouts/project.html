@@ -1,0 +1,26 @@
+---
+layout: base
+title: {{ page.pretty_title }} | ren's stuff
+---
+
+<h1>{{ page.pretty_title }}</h1>
+
+<div class="link-box" id="{{ page.title }}">
+	<h2>
+		<i class="i {{ icon }}" aria-hidden="true"></i>
+		{{ page.pretty_title }}
+	</h2>
+
+	{{ content }}
+
+	<div class="link-row">
+		{% for link in page.links %}
+			<a href="{{ link.href }}" target="_blank" rel="noopener noreferrer">
+				<i class="i fa-brands {{ link.icon }}" aria-hidden="true"></i>
+				<span class="underline">{{ link.title }}</span>
+			</a>
+		{% endfor %}
+	</div>
+</div>
+
+<h2><a href="/">Back to home page</a></h2>
