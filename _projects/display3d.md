@@ -1,6 +1,10 @@
 ---
+pretty_title: Display3D
+date: 2024-01-12
+
 color: "#5b7c89"
 icon: fa-solid fa-cube
+
 links:
   - title: crates.io
     icon: fa-rust

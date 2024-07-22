@@ -1,6 +1,9 @@
 ---
+date: 2023-08-20
+
 color: "#f58142"
 icon: fa-brands fa-rust
+
 links:
   - title: crates.io
     icon: fa-rust

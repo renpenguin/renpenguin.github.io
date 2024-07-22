@@ -11,9 +11,10 @@ plugins:
   - jekyll-feed
 
 collections:
-  posts:
+  projects:
     output: true
-    permalink: /p/:title
+    permalink: /:title
+    sort_by: date
 
 defaults:
   - scope:

@@ -31,8 +31,8 @@ layout: base
 
 <h1>Projects</h1>
 
-{% for project in site.posts %}
-<div class="link-box {{ project.class }}" id="{{ project.title | slugify }}" {% if project.color %}style="background: {{ project.color }}"{% endif %}>
+{% for project in site.projects reversed %}
+<div class="link-box {{ project.class }}" id="{{ project.title | slugify }}" {% if project.color %}style="background: {{ project.color }};"{% endif %}>
 	<h2>
 		<i class="i {{ project.icon }}" aria-hidden="true"></i>
 		{{ project.pretty_title | default: project.title }}

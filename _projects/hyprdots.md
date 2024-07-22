@@ -1,6 +1,10 @@
 ---
 pretty_title: Arch Dotfiles
-icon: fa-solid fa-window-maximise
+date: 2024-01-08
+
+color: "#1A1D2B"
+icon: fa-solid fa-window-maximize
+
 links:
   - title: Github
     icon: fa-github

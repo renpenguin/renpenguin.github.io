@@ -1,7 +1,10 @@
 ---
+date: 2024-05-13
+
 color: "#d4d992"
 class: black-text pixelate
 icon: fa-solid fa-life-ring
+
 links:
   - title: itch.io
     icon: fa-itch-io

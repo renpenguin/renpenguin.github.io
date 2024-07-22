@@ -1,6 +1,9 @@
 ---
+date: 2024-06-07
+
 color: "#1E5085"
 icon: fa-solid fa-slash
+
 links:
   - title: Github
     icon: fa-github

@@ -1,7 +1,10 @@
 ---
+date: 2024-07-21
+
 color: "#231b18"
 class: pixelate
 icon: fa-solid fa-satellite
+
 links:
   - title: itch.io
     icon: fa-itch-io
