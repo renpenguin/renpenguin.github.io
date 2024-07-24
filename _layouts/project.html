@@ -16,7 +16,7 @@ title: page.pretty_title | ren's stuff
 		{% for link in page.links %}
 			<a href="{{ link.href }}" target="_blank" rel="noopener noreferrer">
 				<i class="i fa-brands {{ link.icon }}" aria-hidden="true"></i>
-				<span class="underline">{{ link.title }}</span>
+				{{ link.title }}
 			</a>
 		{% endfor %}
 	</div>

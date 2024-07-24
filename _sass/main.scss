@@ -39,10 +39,6 @@ a {
     }
 }
 
-.underline {
-    text-decoration: underline;
-}
-
 .link-box-row {
     max-width: 550px;
     display: flex;
@@ -101,8 +97,9 @@ a {
         image-rendering: pixelated;
     }
 
-    &.black-text * {
-        color: #151426;
+    &.black-text {
+        * { color: #151426; }
+        a:hover { color: #006df2; }
     }
 }
 
