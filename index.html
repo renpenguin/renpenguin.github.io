@@ -8,25 +8,18 @@ layout: base
 </div>
 
 <div class="link-box-row">
-	<a href="https://github.com/redpenguinyt" target="_blank" rel="noopener noreferrer">
-		<div class="link-box" id="github">
+	{% for link in site.data.links %}
+	<a href="{{ link.href }}" target="_blank" rel="noopener noreferrer">
+		<div class="link-box" {% if link.color %}style="background: {{ link.color }};"{% endif %}>
 			<h2>
-				<i class="i fa-brands fa-github" aria-hidden="true"></i>
-				Github
+				<i class="i fa-brands {{ link.icon }}" aria-hidden="true"></i>
+				{{ link.title }}
 			</h2>
-			<p>Most of my stuff is on Github!</p>
-		</div>
-	</a>
 
-	<a href="https://redpenguin777.itch.io" target="_blank" rel="noopener noreferrer">
-		<div class="link-box" id="itch">
-			<h2>
-				<i class="i fa-brands fa-itch-io" aria-hidden="true"></i>
-				Itch.io
-			</h2>
-			<p>...except my games, which are on itch</p>
+			<p>{{ link.desc }}</p>
 		</div>
 	</a>
+	{% endfor %}
 </div>
 
 <h1>Projects</h1>

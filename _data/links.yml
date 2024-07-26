@@ -1,0 +1,11 @@
+- title: Github
+  icon: fa-github
+  href: https://github.com/redpenguinyt
+  desc: Most of my stuff is on Github!
+  color: "#22272e"
+
+- title: itch.io
+  icon: fa-itch-io
+  href: https://redpenguin777.itch.io
+  desc: ...except my games, which are on itch
+  color: "#f13152"
