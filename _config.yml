@@ -7,8 +7,8 @@ author: Red Penguin
 url: "https://redpengu.in"
 
 # Build settings
-plugins:
-  - jekyll-feed
+# plugins:
+#   - jekyll-feed
 
 collections:
   projects:
