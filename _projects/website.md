@@ -2,7 +2,6 @@
 pretty_title: This website!
 date: 2024-07-21
 
-color: "#1A1D2B"
 icon: fa-solid fa-globe
 
 links:

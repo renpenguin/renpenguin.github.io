@@ -2,7 +2,6 @@
 pretty_title: Arch Dotfiles
 date: 2024-01-08
 
-color: "#1A1D2B"
 icon: fa-solid fa-window-maximize
 
 links:
