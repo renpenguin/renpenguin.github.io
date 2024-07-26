@@ -12,4 +12,4 @@ links:
 
 My Hyprland rice
 
-![Hyprland Screenshot](/assets/images/hyprdots_screenshot.png)
+![Hyprland Screenshot](/assets/images/hyprdots.png)
