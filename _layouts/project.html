@@ -5,7 +5,8 @@ title: page.pretty_title | ren's stuff
 
 <h1>
 	<i class="i {{ page.icon }}" aria-hidden="true"></i>
-	{{ page.pretty_title | default: page.title }} | <a href="/">Home</a>
+	{{ page.pretty_title | default: page.title }}
+	| <a href="/"><i class="fa-solid fa-house"></i></a>
 </h1>
 
 <div class="link-box selected {{ page.class }}" id="{{ page.title | slugify }}" {% if page.color %}style="background: {{ page.color }};"{% endif %}>
