@@ -1,9 +1,11 @@
 {% for project in site.projects reversed %}
 <div class="link-box {{ project.class }}" id="{{ project.title | slugify }}" {% if project.color %}style="background: {{ project.color }};"{% endif %}>
-	<h2>
-		<i class="i {{ project.icon }}" aria-hidden="true"></i>
-		{{ project.pretty_title | default: project.title }}
-	</h2>
+	<a href="#{{ project.title | slugify }}">
+		<h2 title="Click to expand!">
+			<i class="i {{ project.icon }}" aria-hidden="true"></i>
+			{{ project.pretty_title | default: project.title }}
+		</h2>
+	</a>
 
 	{{ project.content }}
 

@@ -63,6 +63,11 @@ a {
 
     min-width: 250px;
 
+    > a {
+        text-decoration: none;
+        cursor: grab;
+    }
+
     &.selected, &:target {
         max-width: 900px;
     }
@@ -80,8 +85,7 @@ a {
         border-color: rgb(145, 191, 255);
     }
 
-    video,
-    img {
+    video, img {
         width: 100%;
     }
 
