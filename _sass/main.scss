@@ -11,9 +11,12 @@
     color: white;
 }
 
-body {
+html {
     background: #1a1d2c;
     padding: 6px;
+}
+
+body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -25,10 +28,10 @@ body {
             color: #93b5af;
         }
     }
+}
 
-    h2 {
-        margin-bottom: 0;
-    }
+h2 {
+    margin-bottom: 0;
 }
 
 a {
