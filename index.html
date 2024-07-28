@@ -21,6 +21,20 @@ layout: base
 	</a>
 	{% endfor %}
 </div>
+<!-- 
+<div class="link-box posts">
+	<h2>Recent Posts</h2>
+
+	{% for post in site.posts limit:3 %}
+	<div class="link-box" {% if post.color %}style="background: {{ post.color }};"{% endif %}>
+		<a href="{{ post.url }}" target="_blank" rel="noopener noreferrer">
+			<h3>{{ post.title }}</h3>
+		</a>
+
+		{{ post.excerpt }}
+	</div>
+	{% endfor %}
+</div> -->
 
 <h1>Projects</h1>
 
