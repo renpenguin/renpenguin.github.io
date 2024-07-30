@@ -6,7 +6,7 @@ icon: fa-solid fa-window-maximize
 
 links:
   - title: Github
-    icon: fa-github
+    icon: fa-brands fa-github
     href: https://github.com/redpenguinyt/dots
 ---
 

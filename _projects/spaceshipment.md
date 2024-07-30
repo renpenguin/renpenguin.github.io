@@ -7,10 +7,10 @@ icon: fa-solid fa-satellite
 
 links:
   - title: itch.io
-    icon: fa-itch-io
+    icon: fa-brands fa-itch-io
     href: https://redpenguin777.itch.io/spaceshipment
   - title: Level Editor
-    icon: fa-github
+    icon: fa-brands fa-github
     href: https://github.com/redpenguinyt/spaceshipment_editor/
 ---
 

@@ -12,7 +12,7 @@
 	<div class="link-row">
 		{% for link in project.links %}
 			<a href="{{ link.href }}">
-				<i class="i fa-brands {{ link.icon }}" aria-hidden="true"></i>
+				<i class="i {{ link.icon }}" aria-hidden="true"></i>
 				{{ link.title }}
 			</a>
 		{% endfor %}

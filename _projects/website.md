@@ -6,7 +6,7 @@ icon: fa-solid fa-globe
 
 links:
   - title: Github
-    icon: fa-github
+    icon: fa-brands fa-github
     href: https://github.com/redpenguinyt/redpenguinyt.github.io
 ---
 

@@ -7,10 +7,10 @@ icon: fa-solid fa-cube
 
 links:
   - title: crates.io
-    icon: fa-rust
+    icon: fa-brands fa-rust
     href: https://crates.io/crates/display3d
   - title: Github
-    icon: fa-github
+    icon: fa-brands fa-github
     href: https://github.com/redpenguinyt/display3d
 ---
 

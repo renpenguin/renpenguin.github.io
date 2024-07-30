@@ -6,10 +6,10 @@ icon: fa-brands fa-rust
 
 links:
   - title: crates.io
-    icon: fa-rust
+    icon: fa-brands fa-rust
     href: https://crates.io/crates/gemini-engine
   - title: Github
-    icon: fa-github
+    icon: fa-brands fa-github
     href: https://github.com/redpenguinyt/gemini-engine
 ---
 
