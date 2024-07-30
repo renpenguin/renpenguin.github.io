@@ -4,7 +4,7 @@ layout: base
 
 <h1>
 	{{ page.pretty_title | default: page.title }}
-	| <a href="/"><i class="fa-solid fa-house"></i></a>
+	| <a href="/blog"><i class="fa-solid fa-newspaper"></i></a>
 </h1>
 
 <div class="link-box post selected {{ page.class }}" {% if page.color %}style="background: {{ page.color }};"{% endif %}>
@@ -12,3 +12,14 @@ layout: base
 	{{ content }}
 
 </div>
+
+<!-- Display related project -->
+{% for p in site.projects %}
+	{% assign id = p.title | slugify %}
+	{% if id == page.project %}
+
+		<h1>Related project</h1>
+
+		{% include project.html project=p class="selected" %}
+	{% endif %}
+{% endfor %}

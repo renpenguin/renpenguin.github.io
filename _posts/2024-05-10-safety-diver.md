@@ -2,6 +2,7 @@
 title: Safety Diver Devlog
 color: "#e86a3f"
 class: black-text
+project: safety-diver
 ---
 
 The [Uncrank'd jam](https://itch.io/jam/uncrankdjam) is here, and the themes are Reflection and Float. After a bit of brainstorming i decided to give buoyancy physics a try, to stay in theme of making games based on simple physics principles. The deadline is on **May 11th 2024 at 1:00 PM GMT**
