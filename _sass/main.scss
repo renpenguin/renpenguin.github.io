@@ -68,6 +68,7 @@ a {
     max-width: 550px;
 
     &.posts {
+        background-color: #505072;
         display: flex;
         flex-direction: column;
         gap: 6px;
@@ -113,6 +114,7 @@ a {
         padding-top: 0;
 
         a {
+            white-space: nowrap;
             margin-right: 5px;
             text-decoration: none;
         }
