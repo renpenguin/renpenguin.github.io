@@ -1,6 +1,6 @@
 {% for project in site.projects reversed %}
-<div class="link-box {{ project.class }}" id="{{ project.title | slugify }}" {% if project.color %}style="background: {{ project.color }};"{% endif %}>
-	<a href="#{{ project.title | slugify }}">
+<div class="link-box project {{ project.class }}" id="{{ project.title | slugify }}" {% if project.color %}style="background: {{ project.color }};"{% endif %}>
+	<a class="hash-link" href="#{{ project.title | slugify }}">
 		<h2 title="Click to expand!">
 			<i class="i {{ project.icon }}" aria-hidden="true"></i>
 			{{ project.pretty_title | default: project.title }}

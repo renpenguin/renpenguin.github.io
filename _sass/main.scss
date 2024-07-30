@@ -99,27 +99,27 @@ a {
     }
 
     &.black-text {
-        * { color: #151426; }
+        color: #151426;
         a:hover { color: #006df2; }
     }
 
-    > a {
+    .link-row {
+        padding: 12px 3px;
+        font-size: 1.2em;
+        padding-top: 0;
+
+        a {
+            margin-right: 5px;
+            text-decoration: none;
+        }
+    }
+
+    > a.hash-link {
         text-decoration: none;
         cursor: grab;
     }
 
     video, img {
         width: 100%;
-    }
-}
-
-.link-row {
-    padding: 12px 3px;
-    font-size: 1.2em;
-    padding-top: 0;
-
-    a {
-        margin-right: 5px;
-        text-decoration: none;
     }
 }
