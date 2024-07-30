@@ -22,7 +22,25 @@ layout: base
 	{% endfor %}
 </div>
 
-{% include post-list.html %}
+
+<div class="link-box posts">
+	<h2>Newest post</h2>
+
+	{% include post-list.html limit=1 %}
+
+	<br>
+	<div class="link-row">
+		<a href="/blog">
+			<i class="fa-solid fa-newspaper" aria-hidden="true"></i>
+			See more posts...
+		</a>
+
+		<a href="/feed.xml">
+			<i class="i fa-solid fa-rss" aria-hidden="true"></i>
+			RSS Feed
+		</a>
+	</div>
+</div>
 
 <h1>Projects</h1>
 

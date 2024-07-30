@@ -1,13 +1,9 @@
-<div class="link-box posts">
-	<h2>Recent blog posts</h2>
+{% for post in site.posts limit:include.limit %}
+<div class="link-box post {{ post.class }}" {% if post.color %}style="background: {{ post.color }};"{% endif %}>
+	<a href="{{ post.url }}">
+		<h3>{{ post.title }}</h3>
+	</a>
 
-	{% for post in site.posts limit:3 %}
-	<div class="link-box post {{ post.class }}" {% if post.color %}style="background: {{ post.color }};"{% endif %}>
-		<a href="{{ post.url }}">
-			<h3>{{ post.title }}</h3>
-		</a>
-
-		{{ post.excerpt }}
-	</div>
-	{% endfor %}
+	{{ post.excerpt }}
 </div>
+{% endfor %}
