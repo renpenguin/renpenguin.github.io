@@ -6,7 +6,7 @@ class: black-text
 
 The [Uncrank'd jam](https://itch.io/jam/uncrankdjam) is here, and the themes are Reflection and Float. After a bit of brainstorming i decided to give buoyancy physics a try, to stay in theme of making games based on simple physics principles. The deadline is on **May 11th 2024 at 1:00 PM GMT**
 
-<!-- {% assign images = "/blog/images/safety-diver" %} -->
+{% assign images = "/assets/images/safety-diver" %}
 
 # Day 1 (3/5):
 - implemented basic buoyancy!
