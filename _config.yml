@@ -15,10 +15,19 @@ collections:
     output: true
     permalink: /:title
     sort_by: date
+  posts:
+    output: true
+    permalink: /blog/:year/:title
 
 defaults:
   - scope:
       path: "" # an empty string here means all files in the project
+      type: "projects"
     values:
       layout: project
       icon: fa-solid fa-cube
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
