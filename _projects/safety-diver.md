@@ -1,7 +1,7 @@
 ---
 date: 2024-05-13
 
-color: "#d4d992"
+color: "#e86a3f"
 class: black-text pixelate
 icon: fa-solid fa-life-ring
 
