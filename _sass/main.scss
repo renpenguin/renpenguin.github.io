@@ -73,11 +73,15 @@ a {
         padding-bottom: 14px;
     }
 
+    &.post {
+        font-size: large;
+    }
+
     &.selected, &:hover {
         border-color: rgb(145, 191, 255);
     }
 
-    &.selected, &:target {
+    &.project.selected, &:target {
         max-width: 900px;
     }
 

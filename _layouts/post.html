@@ -7,7 +7,7 @@ layout: base
 	| <a href="/"><i class="fa-solid fa-house"></i></a>
 </h1>
 
-<div class="link-box selected">
+<div class="link-box post selected {{ page.class }}" {% if page.color %}style="background: {{ page.color }};"{% endif %}>
 
 	{{ content }}
 
