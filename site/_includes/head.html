@@ -2,7 +2,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-    <title>{{ page.pretty_title | default: page.title | default: site.title }}</title>
+    {% assign title = page.pretty_title | default: page.title %}
+    {% if title %}
+    <title>{{ title }} | {{ site.title }}</title>
+    {% else %}
+    <title>{{ site.title }}</title>
+    {% endif %}
+    
     {% seo title=false %}
 
     <!-- Site resources -->
