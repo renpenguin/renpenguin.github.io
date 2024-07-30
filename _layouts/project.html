@@ -8,16 +8,4 @@ layout: base
 	| <a href="/"><i class="fa-solid fa-house"></i></a>
 </h1>
 
-<div class="link-box project selected {{ page.class }}" id="{{ page.title | slugify }}" {% if page.color %}style="background: {{ page.color }};"{% endif %}>
-
-	{{ content }}
-
-	<div class="link-row">
-		{% for link in page.links %}
-			<a href="{{ link.href }}">
-				<i class="i {{ link.icon }}" aria-hidden="true"></i>
-				{{ link.title }}
-			</a>
-		{% endfor %}
-	</div>
-</div>
+{% include project.html project=page class="selected" hide_title=1 %}
