@@ -3,7 +3,7 @@
 
 	{% for post in site.posts limit:3 %}
 	<div class="link-box post {{ post.class }}" {% if post.color %}style="background: {{ post.color }};"{% endif %}>
-		<a href="{{ post.url }}" target="_blank" rel="noopener noreferrer">
+		<a href="{{ post.url }}">
 			<h3>{{ post.title }}</h3>
 		</a>
 

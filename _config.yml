@@ -8,6 +8,7 @@ url: "https://redpengu.in"
 
 # Build settings
 plugins:
+  - jekyll-target-blank
   - jekyll-feed
 
 collections:
