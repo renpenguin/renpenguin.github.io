@@ -25,7 +25,7 @@ The [Uncrank'd jam](https://itch.io/jam/uncrankdjam) is here, and the themes are
 - also added a depth HUD
 ![Safety diver gameplay]({{ images }}/playdate-20240504-130535.gif)
 - im thinking the basic premise can be that you dive down for gold and stuff while avoiding hazards, and have to make it back to the surface for all the collected items to count!
-- i'm very much enjoying taking a little break from spaceshipment, this has been fun so far!
+- im enjoying taking a little break from [Spaceshipment](/#spaceshipment), this has been super fun so far!
 
 # Day 3:
 - added coins for the player to collect!
