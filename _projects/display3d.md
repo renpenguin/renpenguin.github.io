@@ -6,12 +6,12 @@ color: "#5b7c89"
 icon: fa-solid fa-cube
 
 links:
-  - title: crates.io
-    icon: fa-brands fa-rust
-    href: https://crates.io/crates/display3d
   - title: Github
     icon: fa-brands fa-github
     href: https://github.com/redpenguinyt/display3d
+  - title: crates.io
+    icon: fa-brands fa-rust
+    href: https://crates.io/crates/display3d
 ---
 
 A command line interface for rendering and animating 3D objects

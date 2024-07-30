@@ -6,15 +6,15 @@ class: black-text pixelate
 icon: fa-solid fa-life-ring
 
 links:
+  - title: Github
+    icon: fa-brands fa-github
+    href: https://github.com/redpenguinyt/SafetyDiver
   - title: itch.io
     icon: fa-brands fa-itch-io
     href: https://redpenguin777.itch.io/safety-diver
   - title: Uncrank'd Jam
     icon: fa-brands fa-itch-io
     href: https://itch.io/jam/uncrankdjam
-  - title: Github
-    icon: fa-brands fa-github
-    href: https://github.com/redpenguinyt/SafetyDiver
   - title: Devlog
     icon: fa-solid fa-newspaper
     href: /blog/2024/safety-diver
