@@ -5,6 +5,7 @@ description: hi! i'm ren, i like making things occasionally
 author: Red Penguin
 
 url: "https://redpengu.in"
+source: site
 
 # Build settings
 plugins:
