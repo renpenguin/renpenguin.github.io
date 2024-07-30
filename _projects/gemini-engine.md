@@ -1,7 +1,7 @@
 ---
 date: 2023-08-20
 
-color: "#f58142"
+color: "#264323"
 icon: fa-brands fa-rust
 
 links:
