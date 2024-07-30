@@ -73,6 +73,10 @@ a {
         padding-bottom: 14px;
     }
 
+    &.selected, &:hover {
+        border-color: rgb(145, 191, 255);
+    }
+
     &.selected, &:target {
         max-width: 900px;
     }
@@ -80,14 +84,10 @@ a {
     &:target {
         animation-name: expand-link-box;
         animation-duration: 1s;
-    }
 
-    @keyframes expand-link-box {
-        from {max-width: 550px;}
-    }
-
-    &:hover {
-        border-color: rgb(145, 191, 255);
+        @keyframes expand-link-box {
+            from {max-width: 550px;}
+        }
     }
 
     &.pixelate {
