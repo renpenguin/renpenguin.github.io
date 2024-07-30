@@ -7,12 +7,11 @@
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
-
-    color: white;
 }
 
 html {
     background: #1a1d2c;
+    color: white;
     padding: 6px;
 }
 
@@ -24,9 +23,7 @@ body {
     gap: 6px;
 
     > h1, > h2 {
-        &, * {
-            color: #93b5af;
-        }
+        color: #93b5af;
     }
 }
 
@@ -35,7 +32,7 @@ h2 {
 }
 
 a {
-    color: rgb(255, 255, 255);
+    color: inherit;
     width: 100%;
     &:hover {
         color: #91bfff;
@@ -52,6 +49,10 @@ a {
         text-decoration: none;
         min-width: 250px;
         flex: 1;
+
+        * {
+            color: white;
+        }
     }
 }
 
