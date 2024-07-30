@@ -75,6 +75,10 @@ a {
 
     &.post {
         font-size: large;
+
+        h3 {
+            margin-bottom: 0;
+        }
     }
 
     &.selected, &:hover {
