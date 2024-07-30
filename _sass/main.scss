@@ -43,7 +43,7 @@ a {
     }
 }
 
-.link-box-row {
+.card-row {
     max-width: 550px;
     display: flex;
     flex-wrap: wrap;
@@ -57,7 +57,7 @@ a {
     }
 }
 
-.link-box {
+.card {
     background-color: #1a1d2b;
     border: 2px solid rgb(139, 136, 219);
     border-radius: 8px;
@@ -91,10 +91,10 @@ a {
     }
 
     &:target {
-        animation-name: expand-link-box;
+        animation-name: grow-card;
         animation-duration: 1s;
 
-        @keyframes expand-link-box {
+        @keyframes grow-card {
             from {max-width: 550px;}
         }
     }

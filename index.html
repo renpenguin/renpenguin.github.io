@@ -2,15 +2,15 @@
 layout: base
 ---
 
-<div class="link-box" id="greeting">
+<div class="card" id="greeting">
 	<h2>hi!</h2>
 	<p>i'm ren, i like making things occasionally. my two favourite languages are <span style="color: #DEA584;">Rust</span> for its memory safety and <span style="color: #888888;">C</span> for its barebones low-level feel. i run arch linux with <a href="https://hyprland.org">HyprlandWM</a> on my main system, mainly as a hobby.</p>
 </div>
 
-<div class="link-box-row">
+<div class="card-row">
 	{% for link in site.data.links %}
 	<a href="{{ link.href }}">
-		<div class="link-box" {% if link.color %}style="background: {{ link.color }};"{% endif %}>
+		<div class="card" {% if link.color %}style="background: {{ link.color }};"{% endif %}>
 			<h2>
 				<i class="i fa-brands {{ link.icon }}" aria-hidden="true"></i>
 				{{ link.title }}
@@ -22,7 +22,7 @@ layout: base
 	{% endfor %}
 </div>
 
-<div class="link-box posts">
+<div class="card posts">
 	<h2>Newest post</h2>
 
 	{% include post-list.html limit=1 %}

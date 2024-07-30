@@ -1,6 +1,6 @@
 {% assign project = include.project %}
 
-<div class="link-box project {{ include.class }} {{ project.class }}" id="{{ project.title | slugify }}" {% if project.color %}style="background: {{ project.color }};"{% endif %}>
+<div class="card project {{ include.class }} {{ project.class }}" id="{{ project.title | slugify }}" {% if project.color %}style="background: {{ project.color }};"{% endif %}>
 	{% if include.hide_title != 1 %}
 	<a class="hash-link" href="#{{ project.title | slugify }}">
 		<h2 title="Click to expand!">

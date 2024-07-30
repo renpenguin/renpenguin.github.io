@@ -1,5 +1,5 @@
 {% for post in site.posts limit:include.limit %}
-<div class="link-box post {{ post.class }}" {% if post.color %}style="background: {{ post.color }};"{% endif %}>
+<div class="card post {{ post.class }}" {% if post.color %}style="background: {{ post.color }};"{% endif %}>
 	<a href="{{ post.url }}">
 		<h3>{{ post.title }}</h3>
 	</a>
