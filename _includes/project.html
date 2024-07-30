@@ -1,4 +1,5 @@
-{% for project in site.projects reversed %}
+{% assign project = include.project %}
+
 <div class="link-box project {{ project.class }}" id="{{ project.title | slugify }}" {% if project.color %}style="background: {{ project.color }};"{% endif %}>
 	<a class="hash-link" href="#{{ project.title | slugify }}">
 		<h2 title="Click to expand!">
@@ -7,7 +8,7 @@
 		</h2>
 	</a>
 
-	{{ project.content }}
+	{{ project.content | markdownify }}
 
 	<div class="link-row">
 		{% for link in project.links %}
@@ -18,4 +19,3 @@
 		{% endfor %}
 	</div>
 </div>
-{% endfor %}

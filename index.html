@@ -43,4 +43,6 @@ layout: base
 
 <h1>Projects</h1>
 
-{% include project-list.html %}
+{% for p in site.projects reversed %}
+	{% include project.html project=p %}
+{% endfor %}
