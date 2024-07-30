@@ -3,7 +3,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
 
     <title>{{ page.pretty_title | default: page.title | default: site.title }}</title>
-    {%- seo title=false -%}
+    {% seo title=false %}
 
     <!-- Site resources -->
     <link rel="stylesheet" type="text/css" href={{ "/assets/style.css" | relative_url }} />
