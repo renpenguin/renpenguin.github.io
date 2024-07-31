@@ -1,14 +1,11 @@
 * {
     box-sizing: border-box;
-
-    font-family: "Noto Sans Malayalam", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-variation-settings:
-        "wdth" 100;
 }
 
 html {
+    font-family: "Noto Sans Malayalam", sans-serif;
+    font-optical-sizing: auto;
+
     background: #1a1d2c;
     color: white;
     padding: 6px;
