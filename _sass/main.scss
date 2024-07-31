@@ -73,6 +73,10 @@ a {
         font-size: large;
 
         &.main-content {
+            max-width: 700px;
+
+            background-color: #151426;
+            font-family: sans-serif;
             color: #93b5af;
         }
 
