@@ -20,11 +20,10 @@ layout: base
 
 </div>
 
-<!-- Display related project -->
+<!-- Related project -->
 {% for p in site.projects %}
 	{% assign id = p.title | slugify %}
 	{% if id == page.project %}
-
 		<h1>Related project</h1>
 
 		{% include project.html project=p class="selected" %}
