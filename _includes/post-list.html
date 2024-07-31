@@ -1,9 +1,10 @@
 {% for post in site.posts limit:include.limit %}
-<div class="card post {{ post.class }}" {% if post.color %}style="background: {{ post.color }};"{% endif %}>
-	<a href="{{ post.url }}">
-		<h3>{{ post.title }}</h3>
-	</a>
+	{% if post.color %}{%capture color%} style="background: {{ post.color }};"{%endcapture%}{%endif%}
+	<div class="card post {{ post.class }}"{{ color }}>
+		<a href="{{ post.url }}">
+			<h3>{{ post.title }}</h3>
+		</a>
 
-	{{ post.excerpt }}
-</div>
+		{{ post.excerpt }}
+	</div>
 {% endfor %}

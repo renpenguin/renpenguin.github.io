@@ -10,7 +10,8 @@ layout: base
 <div class="card-row">
 	{% for link in site.data.links %}
 	<a href="{{ link.href }}">
-		<div class="card" {% if link.color %}style="background: {{ link.color }};"{% endif %}>
+		{% if link.color %}{%capture color%} style="background: {{ link.color }};"{%endcapture%}{%endif%}
+		<div class="card"{{ color }}>
 			<h2>
 				<i class="i fa-brands {{ link.icon }}" aria-hidden="true"></i>
 				{{ link.title }}
