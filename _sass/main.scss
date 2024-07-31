@@ -4,7 +4,6 @@
     font-family: "Noto Sans Malayalam", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
-    font-style: normal;
     font-variation-settings:
         "wdth" 100;
 }
@@ -76,6 +75,11 @@ a {
 
     &.post {
         font-size: large;
+
+        &.main-content {
+            border: none;
+            color: #93b5af;
+        }
 
         h3 {
             margin-bottom: 0;

@@ -9,7 +9,13 @@ layout: base
 
 <div class="card post selected {{ page.class }}" {% if page.color %}style="background: {{ page.color }};"{% endif %}>
 
-	{{ content }}
+	{{ page.excerpt }}
+
+</div>
+
+<div class="card post selected main-content">
+
+	{{ content | remove_first: page.excerpt }}
 
 </div>
 
