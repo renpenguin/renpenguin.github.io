@@ -40,6 +40,18 @@ a {
     }
 }
 
+.attach-cards-to-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    :last-child {
+        border-top: none;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}
+
 .card-row {
     max-width: 550px;
     display: flex;

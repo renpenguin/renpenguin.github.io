@@ -7,17 +7,19 @@ layout: base
 	| <a href="/blog"><i class="fa-solid fa-newspaper"></i></a>
 </h1>
 
-{% if page.color %}{%capture color%} style="background: {{ page.color }};"{%endcapture%}{%endif%}
-<div class="card post selected {{ page.class }}"{{ color }}>
+<div class="attach-cards-to-top">
+	{% if page.color %}{%capture color%} style="background: {{ page.color }};"{%endcapture%}{%endif%}
+	<div class="card post selected {{ page.class }}"{{ color }}>
 
-	{{ page.excerpt }}
+		{{ page.excerpt }}
 
-</div>
+	</div>
 
-<div class="card post selected main-content">
+	<div class="card post selected main-content">
 
-	{{ content | remove_first: page.excerpt }}
+		{{ content | remove_first: page.excerpt }}
 
+	</div>
 </div>
 
 <!-- Related project -->
