@@ -46,7 +46,7 @@ a {
     flex-wrap: wrap;
     gap: 6px;
 
-    a {
+    > a {
         text-decoration: none;
         min-width: 250px;
         flex: 1;
@@ -102,7 +102,7 @@ a {
         max-width: 900px;
     }
 
-    &:target {
+    &:target:not(.selected) {
         animation-name: grow-card;
         animation-duration: 1s;
 
