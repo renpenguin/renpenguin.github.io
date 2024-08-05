@@ -1,15 +1,27 @@
 {% assign project = include.project %}
+<!--
+Project HTML include
+Parameters:
+	- project: the actual project, in the format of any of the projects in `_projects/`
+	- hide_title: when 1, hides the title of the project card. optional
+	- disable_expand_link: when 1, disables the hash link in the title. optional
+-->
 
 {% assign color = "" %}
 {% if project.color %}{%capture color%} style="background: {{ project.color }};"{%endcapture%}{%endif%}
 <div class="card project {{include.class}} {{project.class}}" id="{{project.title | slugify}}"{{color}}>
-	{% if include.hide_title != 1 %}
+	{% if include.disable_expand_link != 1 and include.hide_title != 1 %}
 	<a class="hash-link" href="#{{ project.title | slugify }}">
 		<h2 title="Click to expand!">
 			<i class="i {{ project.icon }}" aria-hidden="true"></i>
 			{{ project.pretty_title | default: project.title }}
 		</h2>
 	</a>
+	{% elsif include.hide_title != 1 %}
+	<h2>
+		<i class="i {{ project.icon }}" aria-hidden="true"></i>
+		{{ project.pretty_title | default: project.title }}
+	</h2>
 	{% endif %}
 
 	{{ project.content | markdownify }}

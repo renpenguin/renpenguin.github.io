@@ -26,6 +26,6 @@ layout: base
 	{% if id == page.project %}
 		<h1>Related project</h1>
 
-		{% include project.html project=p class="selected" %}
+		{% include project.html project=p class="selected" disable_expand_link=1 %}
 	{% endif %}
 {% endfor %}
