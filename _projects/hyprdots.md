@@ -7,9 +7,9 @@ icon: fa-solid fa-window-maximize
 links:
   - title: Github
     icon: fa-brands fa-github
-    href: https://github.com/redpenguinyt/dots
+    href: https://github.com/redpenguinyt/dots/tree/hyprdots
 ---
 
-My Hyprland rice
+Configuration files for my Hyprland setup, running on Arch linux.
 
 ![Hyprland Screenshot](/assets/images/hyprdots.png)
