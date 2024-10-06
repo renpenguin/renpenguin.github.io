@@ -3,14 +3,14 @@ date: 2024-08-22
 
 color: "#231b18"
 class: pixelate
-icon: fa-solid fa-satellite
+icon: nf-fa-satellite
 
 links:
   - title: itch.io
-    icon: fa-brands fa-itch-io
+    icon: nf-fa-itch_io
     href: https://redpenguin777.itch.io/spaceshipment
   - title: Level Editor
-    icon: fa-brands fa-github
+    icon: nf-fa-github
     href: https://github.com/redpenguinyt/spaceshipment_editor/
 ---
 

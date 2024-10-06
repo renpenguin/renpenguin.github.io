@@ -3,20 +3,20 @@ date: 2024-05-13
 
 color: "#e86a3f"
 class: black-text pixelate
-icon: fa-solid fa-life-ring
+icon: nf-md-lifebuoy
 
 links:
   - title: Github
-    icon: fa-brands fa-github
+    icon: nf-fa-github
     href: https://github.com/redpenguinyt/SafetyDiver
   - title: itch.io
-    icon: fa-brands fa-itch-io
+    icon: nf-fa-itch_io
     href: https://redpenguin777.itch.io/safety-diver
   - title: Uncrank'd Jam
-    icon: fa-brands fa-itch-io
+    icon: nf-fa-itch_io
     href: https://itch.io/jam/uncrankdjam
   - title: Devlog
-    icon: fa-solid fa-newspaper
+    icon: nf-fa-newspaper
     href: /blog/2024/safety-diver
 ---
 

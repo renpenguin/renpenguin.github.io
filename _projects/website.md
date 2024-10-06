@@ -2,11 +2,11 @@
 pretty_title: This website!
 date: 2024-07-21
 
-icon: fa-solid fa-globe
+icon: nf-md-web
 
 links:
   - title: Github
-    icon: fa-brands fa-github
+    icon: nf-fa-github
     href: https://github.com/redpenguinyt/redpenguinyt.github.io
 ---
 

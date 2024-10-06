@@ -2,11 +2,11 @@
 date: 2024-06-07
 
 color: "#1E5085"
-icon: fa-solid fa-slash
+icon: nf-md-laser_pointer
 
 links:
   - title: Github
-    icon: fa-brands fa-github
+    icon: nf-fa-github
     href: https://github.com/redpenguinyt/Lasers
 ---
 

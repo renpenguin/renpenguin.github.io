@@ -13,13 +13,13 @@ Parameters:
 	{% if include.disable_expand_link != 1 and include.hide_title != 1 %}
 	<a class="hash-link" href="#{{ project.title | slugify }}">
 		<h2 title="Click to expand!">
-			<i class="i {{ project.icon }}" aria-hidden="true"></i>
+			<i class="i nf {{ project.icon }}" aria-hidden="true"></i>
 			{{ project.pretty_title | default: project.title }}
 		</h2>
 	</a>
 	{% elsif include.hide_title != 1 %}
 	<h2>
-		<i class="i {{ project.icon }}" aria-hidden="true"></i>
+		<i class="i nf {{ project.icon }}" aria-hidden="true"></i>
 		{{ project.pretty_title | default: project.title }}
 	</h2>
 	{% endif %}
@@ -29,7 +29,7 @@ Parameters:
 	<div class="link-row">
 		{% for link in project.links %}
 			<a href="{{ link.href }}">
-				<i class="i {{ link.icon }}" aria-hidden="true"></i>
+				<i class="i nf {{ link.icon }}" aria-hidden="true"></i>
 				{{ link.title }}
 			</a>
 		{% endfor %}

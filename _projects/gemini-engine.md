@@ -2,14 +2,14 @@
 date: 2023-08-20
 
 color: "#264323"
-icon: fa-brands fa-rust
+icon: nf-dev-rust
 
 links:
   - title: Github
-    icon: fa-brands fa-github
+    icon: nf-fa-github
     href: https://github.com/redpenguinyt/gemini-engine
   - title: crates.io
-    icon: fa-brands fa-rust
+    icon: nf-dev-rust
     href: https://crates.io/crates/gemini-engine
 ---
 

@@ -2,11 +2,11 @@
 pretty_title: Arch Dotfiles
 date: 2024-01-08
 
-icon: fa-solid fa-window-maximize
+icon: nf-fa-window_restore
 
 links:
   - title: Github
-    icon: fa-brands fa-github
+    icon: nf-fa-github
     href: https://github.com/redpenguinyt/dots/tree/hyprdots
 ---
 

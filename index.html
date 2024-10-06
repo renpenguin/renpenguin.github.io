@@ -13,7 +13,7 @@ layout: base
 		{% if link.color %}{%capture color%} style="background: {{ link.color }};"{%endcapture%}{%endif%}
 		<div class="card"{{ color }}>
 			<h2>
-				<i class="i fa-brands {{ link.icon }}" aria-hidden="true"></i>
+				<i class="i nf {{ link.icon }}" aria-hidden="true"></i>
 				{{ link.title }}
 			</h2>
 
@@ -31,12 +31,12 @@ layout: base
 	<br>
 	<div class="link-row">
 		<a href="/blog">
-			<i class="fa-solid fa-newspaper" aria-hidden="true"></i>
+			<i class="nf nf-fa-newspaper" aria-hidden="true"></i>
 			See more posts...
 		</a>
 
 		<a href="/feed.xml">
-			<i class="i fa-solid fa-rss" aria-hidden="true"></i>
+			<i class="i nf nf-fa-rss" aria-hidden="true"></i>
 			RSS Feed
 		</a>
 	</div>

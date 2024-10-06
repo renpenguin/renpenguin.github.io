@@ -3,11 +3,11 @@ pretty_title: NixOS Dotfiles
 date: 2024-09-26
 
 color: "#0D73CC"
-icon: fa-solid fa-window-maximize
+icon: nf-md-nix
 
 links:
   - title: Github
-    icon: fa-brands fa-github
+    icon: nf-fa-github
     href: https://github.com/redpenguinyt/dots/
 ---
 
