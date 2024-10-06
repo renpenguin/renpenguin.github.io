@@ -16,9 +16,4 @@ links:
 
 A command line interface for rendering and animating 3D objects
 
-<video controls autoplay muted loop>
-  <source src="https://github.com/redpenguinyt/display3d/assets/79577742/6131167a-7b83-4c8e-96ec-c9715f3b4d23"
-    type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-<p></p>
+![Blahaj model spinning using display3d](/assets/images/display3d.gif)
