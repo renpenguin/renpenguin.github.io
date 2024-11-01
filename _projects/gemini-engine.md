@@ -7,7 +7,7 @@ icon: nf-dev-rust
 links:
   - title: Github
     icon: nf-fa-github
-    href: https://github.com/redpenguinyt/gemini-engine
+    href: https://github.com/renpenguin/gemini-engine
   - title: crates.io
     icon: nf-dev-rust
     href: https://crates.io/crates/gemini-engine

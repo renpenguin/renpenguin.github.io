@@ -7,7 +7,7 @@ icon: nf-fa-window_restore
 links:
   - title: Github
     icon: nf-fa-github
-    href: https://github.com/redpenguinyt/dots/tree/hyprdots
+    href: https://github.com/renpenguin/dots/tree/hyprdots
 ---
 
 Configuration files for my Hyprland setup, running on Arch linux.

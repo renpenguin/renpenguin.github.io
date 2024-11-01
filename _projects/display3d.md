@@ -8,7 +8,7 @@ icon: nf-fa-cube
 links:
   - title: Github
     icon: nf-fa-github
-    href: https://github.com/redpenguinyt/display3d
+    href: https://github.com/renpenguin/display3d
   - title: crates.io
     icon: nf-dev-rust
     href: https://crates.io/crates/display3d

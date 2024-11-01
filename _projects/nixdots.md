@@ -8,7 +8,7 @@ icon: nf-md-nix
 links:
   - title: Github
     icon: nf-fa-github
-    href: https://github.com/redpenguinyt/dots/
+    href: https://github.com/renpenguin/dots/
 ---
 
 My NixOS configuration, using flakes and Home Manager. Uses my [Hyprland config](#hyprdots)

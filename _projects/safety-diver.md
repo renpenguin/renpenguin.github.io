@@ -8,7 +8,7 @@ icon: nf-md-lifebuoy
 links:
   - title: Github
     icon: nf-fa-github
-    href: https://github.com/redpenguinyt/SafetyDiver
+    href: https://github.com/renpenguin/SafetyDiver
   - title: itch.io
     icon: nf-fa-itch_io
     href: https://redpenguin777.itch.io/safety-diver
