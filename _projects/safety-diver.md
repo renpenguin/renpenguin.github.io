@@ -11,7 +11,7 @@ links:
     href: https://github.com/renpenguin/SafetyDiver
   - title: itch.io
     icon: nf-fa-itch_io
-    href: https://redpenguin777.itch.io/safety-diver
+    href: https://renpenguin.itch.io/safety-diver
   - title: Uncrank'd Jam
     icon: nf-fa-itch_io
     href: https://itch.io/jam/uncrankdjam

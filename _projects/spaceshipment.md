@@ -8,7 +8,7 @@ icon: nf-fa-satellite
 links:
   - title: itch.io
     icon: nf-fa-itch_io
-    href: https://redpenguin777.itch.io/spaceshipment
+    href: https://renpenguin.itch.io/spaceshipment
   - title: Level Editor
     icon: nf-fa-github
     href: https://github.com/renpenguin/spaceshipment_editor/
