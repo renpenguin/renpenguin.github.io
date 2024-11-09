@@ -1,5 +1,5 @@
 ---
-date: 2024-08-22
+date: 2024-11-09
 
 color: "#231b18"
 class: pixelate
@@ -14,6 +14,6 @@ links:
     href: https://github.com/renpenguin/spaceshipment_editor/
 ---
 
-A game about delivering packages to residents of the asteroid belt, made for the Playdate handheld console
+A game about shooting probes into the asteroid belt, swinging around planets using orbit mechanics to reach your destination, made for the Playdate handheld console
 
-![Spaceshipment Gameplay Example](https://img.itch.zone/aW1hZ2UvMjU2NTIyNS8xNjM3MTI3Mi5naWY=/original/PIS466.gif)
+![Spaceshipment Gameplay Example](/assets/images/spaceshipment.gif)
