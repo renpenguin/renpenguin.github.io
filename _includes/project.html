@@ -1,11 +1,12 @@
 {% assign project = include.project %}
-<!--
+
+{% comment %}
 Project HTML include
 Parameters:
 	- project: the actual project, in the format of any of the projects in `_projects/`
 	- hide_title: when 1, hides the title of the project card. optional
 	- disable_expand_link: when 1, disables the hash link in the title. optional
--->
+{% endcomment %}
 
 {% assign color = "" %}
 {% if project.color %}{%capture color%} style="background: {{ project.color }};"{%endcapture%}{%endif%}
