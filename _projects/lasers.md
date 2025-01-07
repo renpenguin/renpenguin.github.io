@@ -1,7 +1,7 @@
 ---
 date: 2024-06-07
 
-color: "#1E5085"
+color: "#1e5085"
 icon: nf-md-laser_pointer
 
 links:

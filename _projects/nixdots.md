@@ -2,7 +2,7 @@
 pretty_title: NixOS Dotfiles
 date: 2024-09-26
 
-color: "#0D73CC"
+color: "#0d73cc"
 icon: nf-md-nix
 
 links:
