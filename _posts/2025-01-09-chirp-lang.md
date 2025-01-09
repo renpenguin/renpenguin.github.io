@@ -3,7 +3,7 @@ title: The development of Chirp, a statically typed interpreted language for beg
 color: "#1e5085"
 project: chirp
 ---
-Programming has never been as accessible as it is now, thanks to the extensive development of easy-to-learn, beginner-friendly languages. Unfortunately, many of these languages make trade-offs for the sake of "approachability" which come to cause intense headaches in larger projects, but wriggle their way into production all the same. This is my attempt to design and implement an alternative using the [Odin programming language](https://odin-lang.org/).
+Programming is more accessible than ever, thanks to the extensive development of easy-to-learn, beginner-friendly languages. Unfortunately, many of these languages make trade-offs for the sake of "approachability" which come to cause intense headaches in larger projects, but wriggle their way into production all the same. This is my attempt to design and implement a headache-free alternative using the [Odin programming language](https://odin-lang.org/).
 
 Two such beginner-friendly languages are Lua ([which I've previously discussed]({% post_url 2024-07-30-c-not-lua %})) and Python. Their easy-to-read near-pseudocode syntax makes them a great starting point for novice programmers (Python *carried* my early programming journey). However, their dynamic typing makes it easy to get erroneous values without reporting any sort of coherent error *or even reacting at all until much later in the code*. In a recent project for the [Picotron](https://www.lexaloffle.com/picotron.php), which uses Lua, I made a few typos and referenced variables that *did not exist*. The Lua compiler did **nothing**. It took a full hour to discover this as the culprit for my broken code. I would argue that dynamically typed languages make programming *harder* even than low-level language such as C.  
 <small>This happened to me after my original Lua slander post, so I might post a revised version at some point soon</small>
@@ -59,8 +59,8 @@ Lua uses a garbage collector for memory management. A garbage collector is a sub
 
 **Manual memory management** is used by low level languages such as C, where the developer is expected to allocate and free memory on their own. I want my language to be easy to learn and use, so this is not an option at all.  
 We could automatically free all memory when the scope it was originally created in ends, but if we have a function that returns an array, the array will be freed before it can be returned, so this will not work.  
-**Ownership and Lifetimes** [are quite unique to Rust](https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html), where every object in the language is owned by only one scope. Other scopes may reference objects owned by other scopes, but Rust code will only compile if those references are guaranteed to not outlive the original scope. This could be a viable option, but it often requires a lot of additional work on the user's behalf which may not be very beginner friendly.
-**Reference counting** keeps track of the number of stored pointers to a given object on the heap. When the count reaches 0, the object is freed. However, if two objects point to each other their reference counts will never reach 0, so they will never be freed. Automatic Reference counting [is used in Swift](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/automaticreferencecounting/), and it resolves this issue by allowing users to declare some references as "weak", which don't prevent an object from being freed and must be unwrapped to be used, in case the original object *has* been deallocated. 
+**Ownership and Lifetimes** [are quite unique to Rust](https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html), where every object in the language is owned by only one scope. Other scopes may reference objects owned by other scopes, but Rust code will only compile if those references are guaranteed to not outlive the original scope. This could be a viable option, but it often requires a lot of additional work on the user's behalf which may not be very beginner friendly.  
+**Reference counting** keeps track of the number of stored pointers to a given object on the heap. When the count reaches 0, the object is freed. However, if two objects point to each other their reference counts will never reach 0, so they will never be freed. Automatic Reference counting [is used in Swift](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/automaticreferencecounting/), and it resolves this issue by allowing users to declare some references as "weak", which don't prevent an object from being freed and must be unwrapped to be used, in case the original object *has* been deallocated.  
 For the moment, I've decided to use reference counting as it is the most concise method of memory handling with minimal and handleable tradeoff.
 
 ---
@@ -86,7 +86,7 @@ Token :: union {
 	NewLineType,
 }
 ```
-Figure 3: Keyword, in turn, is a union which holds both identifiers and built in keywords:
+Keyword, in turn, is a union which holds both identifiers and built in keywords:
 ```go
 Keyword :: union {
 	BuiltInKeyword,
