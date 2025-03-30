@@ -9,6 +9,9 @@ links:
   - title: itch.io
     icon: nf-fa-itch_io
     href: https://renpenguin.itch.io/spaceshipment
+  - title: Catalog
+    icon: nf-fa-newspaper
+    href: https://play.date/games/spaceshipment/
   - title: Level Editor
     icon: nf-fa-github
     href: https://github.com/renpenguin/spaceshipment_editor/
