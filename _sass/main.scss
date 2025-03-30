@@ -34,27 +34,46 @@ small {
     color: #657b83;
 }
 
+hr {
+    background-color: #657b83;
+    height: 2px;
+    border: 0;
+    border-radius: 1px;
+}
+
 a {
     color: inherit;
     width: 100%;
+    text-decoration-color: #657b83;
     &:hover {
         color: #91bfff;
+    }
+    &.noul {
+        text-decoration: none;
     }
 }
 
 // Code blocks
+code {
+    font-size: larger;
+}
 pre {
     padding: 8px;
     border-radius: 2px;
     tab-size: 4;
-    white-space: pre-wrap;
-    word-wrap: break-word;
+    overflow: scroll;
+
+    // I think this is the most evil thing i've ever written
+    .wrap-code + div > div > & {
+        white-space: pre-wrap;
+    }
 }
 
 .attach-cards-to-top {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 
     > :last-child {
         border-top: none;

@@ -109,6 +109,9 @@ Bracket :: struct {
 ```
 
 With the Token structure implemented, I then implemented a lexer, which splits a passed string of high level code into individual tokens and output them as a `TokenStream` (a dynamic array of `Tokens`), and a "formatter", which could parse the token stream back into language code, so I could make sure that no important information was being lost during the tokenisation process. This gave me my expected output! Below is shown the manually truncated output of the program at this point. Bear in mind that the "formatted code" is reconstructed using the token list.
+
+<div class="wrap-code"></div>
+
 ```python
 [.../Project]# odin run src
 ------------- Parsed tokens:
